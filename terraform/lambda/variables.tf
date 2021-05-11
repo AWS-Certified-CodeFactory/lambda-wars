@@ -10,3 +10,6 @@ variable "s3_key" {}
 variable "env_variables" {
   default = {}
 }
+
+variable "security_group_id" {}
+variable "subnet_ids" {}

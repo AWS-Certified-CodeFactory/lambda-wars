@@ -10,4 +10,12 @@ resource "aws_lambda_function" "test_lambda" {
   environment {
     variables = var.env_variables
   }
+
+  timeout = 29
+
+  vpc_config {
+    security_group_ids = [var.security_group_id]
+    subnet_ids         = var.subnet_ids
+  }
+
 }
