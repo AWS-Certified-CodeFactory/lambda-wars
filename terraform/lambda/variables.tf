@@ -8,7 +8,9 @@ variable "s3_bucket" {}
 variable "s3_key" {}
 
 variable "env_variables" {
-  default = {}
+  default = {
+    FOO = "bar"
+  }
 }
 
 variable "security_group_id" {}
